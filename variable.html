@@ -35,6 +35,14 @@
 
 <p id="string"></p>
 
+<!-- js function -->
+
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="function"></p>
+
 
 
 <script>
@@ -62,6 +70,14 @@
 
         document.getElementById("string").innerHTML =
         answer1 + "<br>" + answer2 + "<br>" + answer3;
+
+        // function
+        function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+let result = myFunction(6, 5);
+document.getElementById("function").innerHTML = result;
 
 </script>
     
