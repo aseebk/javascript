@@ -85,7 +85,15 @@
 <p id="sort1"></p>
 <p id="sort2"></p>
 
+<!-- events -->
 
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<p>Click the button to display the date.</p>
+<button style="color: blue;" onclick="displayDate()">The time is?</button>
+
+<p id="time"></p>
 
 
 <script>
@@ -103,7 +111,7 @@
      let y = 2;
      
      let z = m + y;
-     document.getElementById("operator").innerHTML = "The sum of m + y is: " + z;
+     document.getElementById("operator").innerHTML = "The sum is: " + z;
 
     //  string
 
@@ -209,6 +217,11 @@ document.getElementById("sort1").innerHTML = fruits;
 fruits.sort();
 document.getElementById("sort2").innerHTML = fruits;
 
+
+// events
+function displayDate() {
+  document.getElementById("time").innerHTML = Date();
+}
 </script>
 
 
