@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Object</title>
+</head>
+<body align="center">
+    <form id="myForm">
+        <h1>Form Object</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label style="margin-top: 1%;" for="email">Email:</label>
+        <input style="margin-top: 1%;" type="email" id="email" name="email"><br>
+
+       
+
+        <input style="margin-top: 1%;" type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var formData = new FormData(document.getElementById("myForm"));
+
+            for (var pair of formData.entries()) {
+                console.log(pair[0] + ': ' + pair[1]);
+            }
+
+        });
+    </script>
+    
+</body>
+</html>
