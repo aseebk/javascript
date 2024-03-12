@@ -1,0 +1,173 @@
+Java script : to give behaviour to the website
+------------
+* es6 version
+* dynamically typed language ( it is not a good property)
+* single thread program language- one by one 
+
+content display : console.log(content)
+
+Data type
+------------ 
+* text- string
+* integer or decimal number : number
+* true or false : boolean data type
+
+Variables
+---------- 
+to store data
+set of rules known as identifiers
+* should start the characterss
+* more than one word - * no space between the words
+                        * first letter of the second word capital
+                       * underscore between two words
+
+   define keyword :  variable_name
+
+   keyword
+   ---------
+   const- reassign not possible
+   var- reassign possible 
+   let - reassign possible 
+   --------------------------------
+
+   Conditional statements /decision making statement
+
+   * if else
+    
+    if(condition{
+        statement
+    })
+
+-------------------------------------------
+looping statement: used for repeated task
+
+* while 
+            syntax
+            initialize a variable
+            while(condition){
+                statement
+            }
+* for(initializing variable;condition;increment){
+    statement
+}
+--------------------------------------------------
+
+*functions
+-----------
+ to do a task repeatedly at different portionsof a code
+
+ function have two part 
+  * function definition 
+  * function call
+
+  ->function definition 
+  --------------------
+    function function_name(arguments){
+        task-statement
+    }
+
+   ->function call 
+    function_name(arg1........,argn)
+
+    -> function hoisting:call a function before defening
+    ---------------------------------------------
+    scope function variable: block scope
+
+
+* Arrow function -
+    syntax 
+        variable=(arg1,........argn)()=>(statement)
+
+* Predefined function : already defined - just need to call
+    eg: console.log()
+        typeof()
+        parsInt()
+        alert()
+        Number()
+    -global accessible
+
+* Call back function = a function call inside another function 
+
+        Asynchronous- delay time
+        Synchronous- executive immediately
+        Anonymous function _ self executing function
+
+* Nested function- function defenition inside another function defenition
+
+        closure: parent property can be accessible by child but child property cannot be accessible to parent
+
+* Array : can hold more than one value in a single variable 
+-----------------
+syntax
+    variable_name = []
+  ->array can hold more than one datatype
+  ->array has stored as keyvalue pair
+  ->key:index
+  ->value: value in the above index
+    eg: 0:mon
+
+    ->index:starts from 0  
+    ->length: start from 1
+    ->array in javascript:infinite
+ *Array methods
+ -------------------
+ ->push: to add new items to an array at end- no change for the index value 
+ -> unshift: to add new items to an array at the begining- change the index value
+ ->pop: to remove last item from the array 
+ ->shift: to remove first item from the array
+
+ different ways to display array items
+ ------------------------------------
+ *for
+ *for in
+ * for of
+
+ array methods
+----------------
+1) push : to add new items to an array(adds at last-doesnt change index values of existing variables)
+2) unshift: to add new items to an array(adds at first,make changes at index value of existing variable)
+
+3) pop: to remove items(removes items at last from the array)
+4) shift: to remove first item from the array
+5) sort():  to arrange an array in ascending or decesebing manner -same array
+6)forEach-same as that of for of
+7)map(callback) -  create array with same number of items as that of parent array
+8)reduce-return a single value from the array
+9)filter- to create a new array from the existing array with elements satisfying certain condition
+10)flat()-2d to 1d
+11)find()-to get a single value from the array - return value
+12) includes()- to get a single value from the array -return true or false
+13)some()-return true or false -based on condition
+14)splice() - to add or remove items from a particular position in an array
+15)indexOf() - return index of a particular item
+
+Objects
+------------
+Can store more than one value like that of array but give more clarity to store data
+Data stored as key value pairs.
+creation
+------------
+variable_name={
+    key1:value1,
+    key2:value2,...
+    keyn:valuen
+}
+display items
+---------------------
+objectname.key
+object_name["key"]
+
+how to add items into an object
+----------------------------------
+object_name["key"]=value
+object_name["key"]=[value] - in case of array
+object.assign 
+
+update 
+----------
+object_name.value
+
+delete
+-----------
+delete.value
+
