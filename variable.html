@@ -43,6 +43,23 @@
 
 <p id="function"></p>
 
+<!-- flow control if else -->
+<h2>JavaScript if .. else</h2>
+
+<p>A time-based greeting:</p>
+
+<p id="if"></p>
+
+<!-- switch statement -->
+<h2>JavaScript switch</h2>
+
+<p id="switch"></p>
+
+<!-- for loop -->
+<h2>JavaScript For Loop</h2>
+
+<p id="for"></p>
+
 
 
 <script>
@@ -79,6 +96,53 @@
 let result = myFunction(6, 5);
 document.getElementById("function").innerHTML = result;
 
+// if else
+
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("if").innerHTML = greeting;
+
+// switch
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("switch").innerHTML = "Today is " + day;
+
+// for loop
+let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("for").innerHTML = text;
 </script>
     
 
