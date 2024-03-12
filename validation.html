@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    
+</head>
+<body>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body align="center" style="margin-top: 2%;">
+    <h1  style="margin-top: 1%;">Form Validation</h1>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label style="margin-top: 2%;" for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error"></span><br>
+
+        <label style="margin-top: 1%;" for="email">Email:</label>
+        <input style="margin-top: 1%;" type="email" id="email" name="email">
+        <span id="emailError" class="error"></span><br>
+
+        <label  style="margin-top: 1%;"  for="password">Password:</label>
+        <input  style="margin-top: 1%;" type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span><br>
+
+        <input  style="margin-top: 1%;" type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var nameError = document.getElementById("nameError");
+            var emailError = document.getElementById("emailError");
+            var passwordError = document.getElementById("passwordError");
+            var isValid = true;
+
+            // Name validation
+            if (name === "") {
+                nameError.textContent = "Name is required";
+                isValid = false;
+            } else {
+                nameError.textContent = "";
+            }
+
+            // Email validation
+            if (email === "") {
+                emailError.textContent = "Email is required";
+                isValid = false;
+            } else {
+                emailError.textContent = "";
+            }
+
+            // Password validation
+            if (password === "") {
+                passwordError.textContent = "Password is required";
+                isValid = false;
+            } else if (password.length < 6) {
+                passwordError.textContent = "Password must be at least 6 characters long";
+                isValid = false;
+            } else {
+                passwordError.textContent = "";
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+</html>
