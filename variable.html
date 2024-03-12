@@ -13,13 +13,13 @@
 
 <p id="variable"></p>
 
-<!-- javascript string -->
+<!-- javascript datatype -->
 
-<h2>JavaScript String</h2>
+<h2>JavaScript Datatype</h2>
 
 <p>When adding a string and a number, JavaScript will treat the number as a string.</p>
 
-<p id="string"></p>
+<p id="datatype"></p>
 
 <!-- javascript operators -->
 
@@ -28,15 +28,23 @@
 
 <p id="operator"></p>
 
+<!-- javascript string -->
+
+<h1>JavaScript Strings</h1>
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+<p id="string"></p>
+
+
 
 <script>
     // variable
     let carName = "BMW";
     document.getElementById("variable").innerHTML = carName;
 
-    //string 
+    //datatype 
     let x = "Volvo" + 16;
-    document.getElementById("string").innerHTML = x;
+    document.getElementById("datatype").innerHTML = x;
 
     // operator
      let m = 5;
@@ -45,6 +53,15 @@
      
      let z = m + y;
      document.getElementById("operator").innerHTML = "The sum of m + y is: " + z;
+
+    //  string
+
+    let answer1 = "It's alright";
+    let answer2 = "He is called 'Ajay'";
+    let answer3 = 'He is famous in "Kollam"'; 
+
+        document.getElementById("string").innerHTML =
+        answer1 + "<br>" + answer2 + "<br>" + answer3;
 
 </script>
     
