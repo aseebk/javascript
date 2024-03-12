@@ -6,12 +6,14 @@
     <title>Javascript Features</title>
 </head>
 <body>
-    
+    <!-- javacsript variables -->
 <h1>JavaScript Variables</h1>
 
 <p>Create a variable, assign a value to it, and display it:</p>
 
-<p id="demo"></p>
+<p id="variable"></p>
+
+<!-- javascript string -->
 
 <h2>JavaScript String</h2>
 
@@ -19,12 +21,31 @@
 
 <p id="string"></p>
 
-<script>
-    let carName = "BMW";
-    document.getElementById("demo").innerHTML = carName;
+<!-- javascript operators -->
 
+<h1>JavaScript Operators</h1>
+<h3>The Assignment (=) Operator</h3>
+
+<p id="operator"></p>
+
+
+<script>
+    // variable
+    let carName = "BMW";
+    document.getElementById("variable").innerHTML = carName;
+
+    //string 
     let x = "Volvo" + 16;
     document.getElementById("string").innerHTML = x;
+
+    // operator
+     let m = 5;
+
+     let y = 2;
+     
+     let z = m + y;
+     document.getElementById("operator").innerHTML = "The sum of m + y is: " + z;
+
 </script>
     
 
