@@ -1,9 +1,7 @@
 Javascript 
 -------------
 JavaScript is a scripting or programming language that allows you to implement complex
-features on web pages — every time a web page does more than just sit there and display
-static information for you to look at — displaying timely content updates, interactive maps,
-animated 2D/3D graphics
+features on web pages 
 
   Syntax
   -------
@@ -22,7 +20,7 @@ Variable declaration Syntax
 Variable
 --------
    In JavaScript, variables are used to store and manipulate data.
-   Here's the syntax for declaring variables:
+   syntax for declaring variables:
      var variableName = value;
    Variables declared with var are function-scoped or globally-scoped.
    They can be re-declared and updated within their scope.
@@ -32,15 +30,6 @@ DataType
  In Javascript, there are five basic, or primitive, types of data. The five most basic
  types of data are strings, numbers, booleans, undefined, and null.
    Integer (int) It is the most common numeric data type used to store numbers
-   without a fractional component (-707, 0, 707).
-   Floating Point (float) ...
-   Character (char) ...
-   String (str or text) ...
-   Boolean (bool) ...
-   Enumerated type (enum) ...
-   Array. ...
-   Date.
-
 Operator
 --------
 Operators are the symbols between values that allow different operations like addition,
@@ -48,10 +37,6 @@ subtraction, multiplication, and more.
      *The Assignment Operator = assigns values
 
      *The Addition Operator + adds values
-
-     *The Multiplication Operator * multiplies values
-
-     *The Comparison Operator > compares values
 
 String
 -------
@@ -80,10 +65,6 @@ decision making, looping, and branching, enabling your program to conditionally
 execute particular blocks of code.
    If, Else, Else if
    Switch
-   For
-   For in
-   While
-   Do While
 
 Loop in JavaScript
 ------------------
@@ -91,9 +72,7 @@ Loops are used in JavaScript to perform repeated tasks based on a condition.
 Conditions typically return true or false . A loop will continue running until
 the defined condition returns false 
    for loop
-   while loop
    do-while loop
-   for-in loop
 
 Array
 -------
